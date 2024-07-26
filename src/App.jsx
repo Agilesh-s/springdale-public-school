@@ -8,6 +8,7 @@ import Faculty from './components/Faculty';
 import Students from './components/Student';
 import Gallery from './components/Gallery';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Students />
       <Gallery />
       <Contact />
+      <Footer />
     </>
   )
 }
