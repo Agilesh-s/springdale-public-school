@@ -1,0 +1,9 @@
+.reduced-height-carousel {
+    max-height: 500px; 
+    overflow: hidden; 
+}
+  
+.reduced-height-carousel img {
+    max-height: 500px; 
+    object-fit: cover;
+}

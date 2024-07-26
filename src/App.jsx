@@ -6,6 +6,7 @@ import Academics from './components/Academics';
 import Admissions from './components/Admissions';
 import Faculty from './components/Faculty';
 import Students from './components/Student';
+import Gallery from './components/Gallery';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Admissions />
       <Faculty />
       <Students />
+      <Gallery />
     </>
   )
 }
