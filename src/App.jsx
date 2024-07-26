@@ -5,6 +5,7 @@ import About from './components/About';
 import Academics from './components/Academics';
 import Admissions from './components/Admissions';
 import Faculty from './components/Faculty';
+import Students from './components/Student';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Academics />
       <Admissions />
       <Faculty />
+      <Students />
     </>
   )
 }
