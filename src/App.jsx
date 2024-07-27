@@ -1,5 +1,7 @@
 import './App.css'
 import Home from './components/Home'
+import 'bootstrap/dist/css/bootstrap.min.css';
+// import { Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar'
 import About from './components/About';
 import Academics from './components/Academics';
@@ -10,7 +12,7 @@ import Gallery from './components/Gallery';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
-function App() {
+const App =() => {
   return (
     <>
       <Navbar />
@@ -21,10 +23,14 @@ function App() {
       <Faculty />
       <Students />
       <Gallery />
-      <Contact />
+      <Contact /> 
       <Footer />
-    </>
+    
+  </>
   )
 }
 
 export default App
+
+
+ 

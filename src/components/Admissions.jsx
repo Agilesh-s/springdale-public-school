@@ -1,11 +1,10 @@
-// src/components/Admissions.js
-import 'bootstrap/dist/css/bootstrap.min.css';  // Make sure Bootstrap CSS is imported
+import 'bootstrap/dist/css/bootstrap.min.css';  
 
 const Admissions = () => {
   return (
     <section id="admissions" className="container my-5">
-      <h2 className="text-center mb-4">Admissions</h2>
-      <div className="card" style={{ backgroundColor: '#f8f9fa' }}>
+      <h2 className="text-center mb-5">Admissions</h2>
+      <div className="card shadow border-0" style={{ backgroundColor: '#fdfdfd' }}>
         <div className="card-body">
           <h5 className="card-title">Admission Process</h5>
           <p className="card-text">

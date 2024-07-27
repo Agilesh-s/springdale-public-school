@@ -1,27 +1,28 @@
 import { Carousel } from 'react-bootstrap';
 import classroom from '../assets/classroom.jpg';
+import sport from '../assets/sport_day.jpg';
+import library from '../assets/library.jpg';
+import cultural from '../assets/culturals.jpg';
+import science from '../assets/science.jpg';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '../App.css'
 
 const Gallery = () => {
   return (
     <section id="gallery" className="container my-5">
-      <h2 className="text-center mb-4">Gallery</h2>
+      <h2 className="text-center mb-5">Gallery</h2>
       <Carousel className="reduced-height-carousel">
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src={classroom}
-            alt="Sports Day"
-          />
-          <Carousel.Caption>
-            <h3>Sports Day</h3>
-            <p>Students participating in various sports events.</p>
-          </Carousel.Caption>
+      <Carousel.Item >
+        <img src={sport} className="d-block w-100"  alt="Annual Sports Day" />
+        <Carousel.Caption>
+            <h3>Annual Sports Day</h3>
+            <p>Celebrating Excellence in Sports</p>
+        </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src={classroom}
+            src={science}
             alt="Science Exhibition"
           />
           <Carousel.Caption>
@@ -32,7 +33,7 @@ const Gallery = () => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src={classroom}
+            src={cultural}
             alt="Cultural Fest"
           />
           <Carousel.Caption>
@@ -54,7 +55,7 @@ const Gallery = () => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src={classroom}
+            src={library}
             alt="Library"
           />
           <Carousel.Caption>
@@ -62,9 +63,12 @@ const Gallery = () => {
             <p>Students reading and studying in the school library.</p>
           </Carousel.Caption>
         </Carousel.Item>
-      </Carousel>
+        
+       </Carousel>
     </section>
   );
 };
 
 export default Gallery;
+
+

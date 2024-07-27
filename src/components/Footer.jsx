@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container">
         <hr style={{
           border: 'none',
-          height: '5px',
+          height: '3px',
           backgroundColor: "#000" // Change the color as needed
         }} />
         <div className="d-flex justify-content-between align-items-center">

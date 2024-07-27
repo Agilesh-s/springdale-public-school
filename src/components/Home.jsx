@@ -1,47 +1,34 @@
-// src/components/Home.js
 import { Carousel } from 'react-bootstrap';
-import sportsDay from '../assets/sports_day.jpg';
-import scienceExhibition from '../assets/science_exhibition.jpg';
-import culturalFest from '../assets/cultural_fest.jpg';
+import school from '../assets/school_tour.mp4';
+import schoolPhoto from '../assets/school.jpg';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../App.css';
 
 const Home = () => {
   return (
-    <div className="home ">
+    <div id="home" className="mt-5">
       <header className="text-center py-5 bg-light">
         <h1 className="display-4">Welcome to Springdale Public School</h1>
         <p className="lead">Where we nurture young minds for a brighter future.</p>
       </header>
-      <div id="carouselExampleIndicators" className="carousel slide max-height-600" data-bs-ride="carousel">
-        <div className="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      
+        <Carousel className="mt-4 reduced-height-carousel" >
+          <Carousel.Item>
+            <img src={schoolPhoto} className="d-block w-100" alt="School" />
+          </Carousel.Item>
+          
+          <Carousel.Item>
+            <video className="d-block w-100" autoPlay muted loop >
+              <source src={school} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <Carousel.Caption>
+              <h3>School Tour</h3>
+              <p>A Glimpse of Our School</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+        </Carousel>
         </div>
-            <Carousel className="mt-4">
-                <Carousel.Item>
-                <img src={sportsDay} className="object-fit-cover d-block w-100" alt="Annual Sports Day" />
-                <Carousel.Caption>
-                    <h3>Annual Sports Day</h3>
-                    <p>Celebrating Excellence in Sports</p>
-                </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                <img src={scienceExhibition} className="object-fit-cover d-block w-100" alt="Science Exhibition" />
-                <Carousel.Caption>
-                    <h3>Science Exhibition</h3>
-                    <p>Showcasing Student Innovations</p>
-                </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                <img src={culturalFest} className="object-fit-cover d-block w-100" alt="Cultural Fest" />
-                <Carousel.Caption>
-                    <h3>Cultural Fest</h3>
-                    <p>Embracing Diversity and Creativity</p>
-                </Carousel.Caption>
-                </Carousel.Item>
-            </Carousel>
-      </div>
-    </div>
   );
 };
 

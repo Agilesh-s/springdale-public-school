@@ -3,8 +3,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const ContactUs = () => {
   return (
-    <section id="contactus" className="container my-5">
-      <h2 className="text-center mb-4">Contact Us</h2>
+    <section id="contact" className="container my-5">
+      <h2 className="text-center mb-5">Contact Us</h2>
       <div className="row">
         {/* Contact Information Section */}
         <div className="col-md-6 mb-4">

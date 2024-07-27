@@ -4,10 +4,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';  // Ensure Bootstrap CSS is impor
 const Academics = () => {
   return (
     <section id="academics" className="container my-5">
-        <h2 className="text-center mb-4">Academics</h2>
+        <h2 className="text-center mb-5">Academic Details</h2>
         <div className="row">
             <div className="col-md-4 mb-3">
-            <div className="card" style={{ backgroundColor: '#e9ecef' }}>
+            <div className="card shadow mb-3" >
                 <div className="card-body">
                 <h5 className="card-title">Primary (Grades 1-5)</h5>
                 <div className="row">
@@ -27,7 +27,7 @@ const Academics = () => {
             </div>
             </div>
             <div className="col-md-4 mb-3">
-            <div className="card" style={{ backgroundColor: '#f8f9fa' }}>
+            <div className="card shadow mb-3">
                 <div className="card-body">
                 <h5 className="card-title">Secondary (Grades 6-10)</h5>
                 <div className="row">
@@ -48,7 +48,7 @@ const Academics = () => {
             </div>
             </div>
             <div className="col-md-4 mb-3">
-            <div className="card" style={{ backgroundColor: '#f8f9fa' }}>
+            <div className="card shadow " >
                 <div className="card-body">
                 <h5 className="card-title">Senior Secondary (Grades 11-12)</h5>
                 <div className="row">
@@ -80,7 +80,7 @@ const Academics = () => {
         </div>
         <div className="row">
             <div className="col-12 mb-3">
-            <div className="card" style={{ backgroundColor: '#f8f9fa' }}>
+            <div className="card border-0.5" style={{ backgroundColor: '#f8f9fa' }}>
                 <div className="card-body">
                 <h5 className="card-title">Teaching Methodologies</h5>
                 <p className="card-text">
