@@ -1,4 +1,3 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
 import '../App.css';  
 import teacher from '../assets/teacher.jpg'
 
@@ -50,7 +49,7 @@ const facultyMembers = [
 const Faculty = () => {
   return (
     <section id="faculty" className="container my-5">
-      <h2 className="text-center mb-5">Our Faculty</h2>
+      <h2 className="text-center mb-5">Our Faculties</h2>
       <div className="row">
         {facultyMembers.map((member, index) => (
           <div className="col-md-4 mb-4" key={index}>
