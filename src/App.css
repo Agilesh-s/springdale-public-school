@@ -2,15 +2,17 @@ html {
     scroll-behavior: smooth;
   }
 
-.reduced-height-carousel {
-    max-height: 500px; 
-    overflow: hidden; 
-
+.carousel,
+.carousel-item {
+  width: 100%; /* Ensures the carousel and its items take full width */
+  max-height: 500px; /* Sets the maximum height */
 }
-  
-.reduced-height-carousel img, video {
-    max-height: 500px; 
-    object-fit: cover;
+
+.carousel-item img,
+.carousel-item video {
+  width: 100%; /* Full width */
+  max-height: 500px; /* Maximum height of 500px */
+  object-fit: cover; /* Ensures content scales properly without stretching */
 }
 
 .card-image img {

@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // import { Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar'
 import About from './components/About';
+import CarouselComponent from './components/CarouselComponent';
 import Academics from './components/Academics';
 import Admissions from './components/Admissions';
 import Faculty from './components/Faculty';
@@ -17,6 +18,7 @@ const App =() => {
     <>
       <Navbar />
       <Home />
+      <CarouselComponent />
       <About />
       <Academics />
       <Admissions />
